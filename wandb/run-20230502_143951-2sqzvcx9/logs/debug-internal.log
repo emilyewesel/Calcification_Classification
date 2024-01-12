@@ -1,0 +1,186 @@
+2023-05-02 14:39:51,843 INFO    StreamThr :12656 [internal.py:wandb_internal():87] W&B internal server running at pid: 12656, started at: 2023-05-02 14:39:51.840590
+2023-05-02 14:39:51,845 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: status
+2023-05-02 14:39:51,848 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: status
+2023-05-02 14:39:51,849 DEBUG   SenderThread:12656 [sender.py:send():303] send: header
+2023-05-02 14:39:51,850 INFO    WriterThread:12656 [datastore.py:open_for_write():75] open: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/run-2sqzvcx9.wandb
+2023-05-02 14:39:51,862 DEBUG   SenderThread:12656 [sender.py:send():303] send: run
+2023-05-02 14:39:52,108 INFO    SenderThread:12656 [dir_watcher.py:__init__():216] watching files in: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files
+2023-05-02 14:39:52,108 INFO    SenderThread:12656 [sender.py:_start_run_threads():928] run started: 2sqzvcx9 with start time 1683063591.832132
+2023-05-02 14:39:52,108 DEBUG   SenderThread:12656 [sender.py:send():303] send: summary
+2023-05-02 14:39:52,108 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: check_version
+2023-05-02 14:39:52,109 INFO    SenderThread:12656 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-05-02 14:39:52,109 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: check_version
+2023-05-02 14:39:52,280 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: run_start
+2023-05-02 14:39:52,282 DEBUG   HandlerThread:12656 [system_info.py:__init__():31] System info init
+2023-05-02 14:39:52,282 DEBUG   HandlerThread:12656 [system_info.py:__init__():46] System info init done
+2023-05-02 14:39:52,282 INFO    HandlerThread:12656 [system_monitor.py:start():150] Starting system monitor
+2023-05-02 14:39:52,283 INFO    SystemMonitor:12656 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-05-02 14:39:52,283 INFO    HandlerThread:12656 [system_monitor.py:probe():171] Collecting system info
+2023-05-02 14:39:52,283 DEBUG   HandlerThread:12656 [system_info.py:probe():195] Probing system
+2023-05-02 14:39:52,284 INFO    SystemMonitor:12656 [interfaces.py:start():168] Started cpu
+2023-05-02 14:39:52,284 INFO    SystemMonitor:12656 [interfaces.py:start():168] Started disk
+2023-05-02 14:39:52,284 INFO    SystemMonitor:12656 [interfaces.py:start():168] Started memory
+2023-05-02 14:39:52,285 INFO    SystemMonitor:12656 [interfaces.py:start():168] Started network
+2023-05-02 14:39:52,292 DEBUG   HandlerThread:12656 [system_info.py:_probe_git():180] Probing git
+2023-05-02 14:39:52,314 DEBUG   HandlerThread:12656 [system_info.py:_probe_git():188] Probing git done
+2023-05-02 14:39:52,315 DEBUG   HandlerThread:12656 [system_info.py:probe():241] Probing system done
+2023-05-02 14:39:52,315 DEBUG   HandlerThread:12656 [system_monitor.py:probe():180] {'os': 'macOS-10.16-x86_64-i386-64bit', 'python': '3.8.5', 'heartbeatAt': '2023-05-02T21:39:52.284026', 'startedAt': '2023-05-02T21:39:51.809241', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/MaggiePas/NCANDA_Contrastive.git', 'commit': 'f2aeff2cbb0d73ccf36dc34447c9ef408280f44e'}, 'email': 'ewesel@stanford.edu', 'root': '/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive', 'host': 'DN0a24b067.SUNet', 'username': 'emilywesel', 'executable': '/Users/emilywesel/opt/anaconda3/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2000, 'min': 2000, 'max': 2000}, 'cpu_freq_per_core': [{'current': 2000, 'min': 2000, 'max': 2000}], 'disk': {'total': 465.62699127197266, 'used': 14.272533416748047}, 'memory': {'total': 16.0}}
+2023-05-02 14:39:52,315 INFO    HandlerThread:12656 [system_monitor.py:probe():181] Finished collecting system info
+2023-05-02 14:39:52,315 INFO    HandlerThread:12656 [system_monitor.py:probe():184] Publishing system info
+2023-05-02 14:39:52,315 DEBUG   HandlerThread:12656 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-02 14:39:52,316 DEBUG   HandlerThread:12656 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-02 14:39:52,316 DEBUG   HandlerThread:12656 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-02 14:39:53,111 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/requirements.txt
+2023-05-02 14:39:53,111 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/conda-environment.yaml
+2023-05-02 14:39:53,111 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/wandb-summary.json
+2023-05-02 14:39:56,634 DEBUG   HandlerThread:12656 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-02 14:39:56,635 INFO    HandlerThread:12656 [system_monitor.py:probe():186] Finished publishing system info
+2023-05-02 14:39:56,640 DEBUG   SenderThread:12656 [sender.py:send():303] send: files
+2023-05-02 14:39:56,641 INFO    SenderThread:12656 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-05-02 14:39:56,648 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: stop_status
+2023-05-02 14:39:56,648 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: stop_status
+2023-05-02 14:39:56,751 DEBUG   SenderThread:12656 [sender.py:send():303] send: telemetry
+2023-05-02 14:39:57,099 INFO    Thread-16 :12656 [upload_job.py:push():143] Uploaded file /var/folders/lz/h5ydkzh14vb2n0xrqn1vkf2h0000gn/T/tmpx2jkas5ywandb/q3r8ovyj-wandb-metadata.json
+2023-05-02 14:39:57,117 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/conda-environment.yaml
+2023-05-02 14:39:57,117 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log
+2023-05-02 14:39:57,117 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/wandb-metadata.json
+2023-05-02 14:39:57,246 DEBUG   SenderThread:12656 [sender.py:send():303] send: telemetry
+2023-05-02 14:39:59,125 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log
+2023-05-02 14:40:11,765 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: stop_status
+2023-05-02 14:40:11,766 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: stop_status
+2023-05-02 14:40:23,181 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/config.yaml
+2023-05-02 14:40:26,864 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: stop_status
+2023-05-02 14:40:26,864 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: stop_status
+2023-05-02 14:40:42,013 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: stop_status
+2023-05-02 14:40:42,014 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: stop_status
+2023-05-02 14:40:52,287 DEBUG   SystemMonitor:12656 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-05-02 14:40:52,289 DEBUG   SenderThread:12656 [sender.py:send():303] send: stats
+2023-05-02 14:40:57,126 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: stop_status
+2023-05-02 14:40:57,126 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: stop_status
+2023-05-02 14:41:01,287 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log
+2023-05-02 14:41:12,234 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: stop_status
+2023-05-02 14:41:12,235 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: stop_status
+2023-05-02 14:41:22,289 DEBUG   SenderThread:12656 [sender.py:send():303] send: stats
+2023-05-02 14:41:23,362 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log
+2023-05-02 14:41:27,231 DEBUG   SenderThread:12656 [sender.py:send():303] send: exit
+2023-05-02 14:41:27,231 INFO    SenderThread:12656 [sender.py:send_exit():442] handling exit code: 1
+2023-05-02 14:41:27,231 INFO    SenderThread:12656 [sender.py:send_exit():444] handling runtime: 94
+2023-05-02 14:41:27,232 INFO    SenderThread:12656 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-05-02 14:41:27,232 INFO    SenderThread:12656 [sender.py:send_exit():450] send defer
+2023-05-02 14:41:27,232 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,232 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 0
+2023-05-02 14:41:27,232 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,232 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-05-02 14:41:27,232 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 1
+2023-05-02 14:41:27,233 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,233 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 1
+2023-05-02 14:41:27,233 INFO    HandlerThread:12656 [system_monitor.py:finish():160] Stopping system monitor
+2023-05-02 14:41:27,253 DEBUG   SystemMonitor:12656 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-05-02 14:41:27,254 DEBUG   SystemMonitor:12656 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-05-02 14:41:27,256 INFO    HandlerThread:12656 [interfaces.py:finish():175] Joined cpu
+2023-05-02 14:41:27,257 INFO    HandlerThread:12656 [interfaces.py:finish():175] Joined disk
+2023-05-02 14:41:27,257 INFO    HandlerThread:12656 [interfaces.py:finish():175] Joined memory
+2023-05-02 14:41:27,257 INFO    HandlerThread:12656 [interfaces.py:finish():175] Joined network
+2023-05-02 14:41:27,258 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,258 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-05-02 14:41:27,258 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 2
+2023-05-02 14:41:27,260 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,260 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 2
+2023-05-02 14:41:27,260 DEBUG   SenderThread:12656 [sender.py:send():303] send: stats
+2023-05-02 14:41:27,261 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,261 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-05-02 14:41:27,261 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 3
+2023-05-02 14:41:27,261 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,262 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 3
+2023-05-02 14:41:27,262 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,262 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-05-02 14:41:27,262 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 4
+2023-05-02 14:41:27,263 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,263 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 4
+2023-05-02 14:41:27,263 DEBUG   SenderThread:12656 [sender.py:send():303] send: summary
+2023-05-02 14:41:27,264 INFO    SenderThread:12656 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-05-02 14:41:27,265 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,265 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-05-02 14:41:27,265 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 5
+2023-05-02 14:41:27,265 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,266 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 5
+2023-05-02 14:41:27,266 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,266 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-05-02 14:41:27,266 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 6
+2023-05-02 14:41:27,266 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:27,266 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 6
+2023-05-02 14:41:27,267 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:27,267 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-05-02 14:41:27,376 INFO    Thread-13 :12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/wandb-summary.json
+2023-05-02 14:41:28,220 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: poll_exit
+2023-05-02 14:41:29,084 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 7
+2023-05-02 14:41:29,085 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: poll_exit
+2023-05-02 14:41:29,085 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:29,086 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 7
+2023-05-02 14:41:29,086 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:29,086 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-05-02 14:41:29,086 INFO    SenderThread:12656 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-05-02 14:41:29,222 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: poll_exit
+2023-05-02 14:41:29,382 INFO    SenderThread:12656 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log
+2023-05-02 14:41:29,383 INFO    SenderThread:12656 [dir_watcher.py:finish():392] scan: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files
+2023-05-02 14:41:29,383 INFO    SenderThread:12656 [dir_watcher.py:finish():406] scan save: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/requirements.txt requirements.txt
+2023-05-02 14:41:29,383 INFO    SenderThread:12656 [dir_watcher.py:finish():406] scan save: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log output.log
+2023-05-02 14:41:29,387 INFO    SenderThread:12656 [dir_watcher.py:finish():406] scan save: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/config.yaml config.yaml
+2023-05-02 14:41:29,391 INFO    SenderThread:12656 [dir_watcher.py:finish():406] scan save: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/wandb-summary.json wandb-summary.json
+2023-05-02 14:41:29,394 INFO    SenderThread:12656 [dir_watcher.py:finish():406] scan save: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/conda-environment.yaml conda-environment.yaml
+2023-05-02 14:41:29,395 INFO    SenderThread:12656 [dir_watcher.py:finish():406] scan save: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/wandb-metadata.json wandb-metadata.json
+2023-05-02 14:41:29,397 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 8
+2023-05-02 14:41:29,398 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: poll_exit
+2023-05-02 14:41:29,400 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:29,401 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 8
+2023-05-02 14:41:29,401 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:29,402 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-05-02 14:41:29,402 INFO    SenderThread:12656 [file_pusher.py:finish():168] shutting down file pusher
+2023-05-02 14:41:29,875 INFO    Thread-21 :12656 [upload_job.py:push():143] Uploaded file /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/conda-environment.yaml
+2023-05-02 14:41:29,876 INFO    Thread-19 :12656 [upload_job.py:push():143] Uploaded file /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/config.yaml
+2023-05-02 14:41:29,907 INFO    Thread-18 :12656 [upload_job.py:push():143] Uploaded file /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/output.log
+2023-05-02 14:41:29,912 INFO    Thread-20 :12656 [upload_job.py:push():143] Uploaded file /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/wandb-summary.json
+2023-05-02 14:41:29,927 INFO    Thread-17 :12656 [upload_job.py:push():143] Uploaded file /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/files/requirements.txt
+2023-05-02 14:41:30,128 INFO    Thread-12 :12656 [sender.py:transition_state():463] send defer: 9
+2023-05-02 14:41:30,128 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:30,129 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 9
+2023-05-02 14:41:30,129 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:30,129 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-05-02 14:41:30,129 INFO    SenderThread:12656 [file_pusher.py:join():173] waiting for file pusher
+2023-05-02 14:41:30,129 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 10
+2023-05-02 14:41:30,129 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:30,130 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 10
+2023-05-02 14:41:30,130 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:30,130 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-05-02 14:41:30,224 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: poll_exit
+2023-05-02 14:41:30,801 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 11
+2023-05-02 14:41:30,802 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: poll_exit
+2023-05-02 14:41:30,802 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:30,802 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 11
+2023-05-02 14:41:30,802 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:30,802 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-05-02 14:41:30,803 INFO    SenderThread:12656 [sender.py:transition_state():463] send defer: 12
+2023-05-02 14:41:30,803 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: defer
+2023-05-02 14:41:30,803 DEBUG   SenderThread:12656 [sender.py:send():303] send: final
+2023-05-02 14:41:30,803 INFO    HandlerThread:12656 [handler.py:handle_request_defer():162] handle defer: 12
+2023-05-02 14:41:30,803 DEBUG   SenderThread:12656 [sender.py:send():303] send: footer
+2023-05-02 14:41:30,804 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: defer
+2023-05-02 14:41:30,804 INFO    SenderThread:12656 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-05-02 14:41:30,805 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: poll_exit
+2023-05-02 14:41:30,805 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: poll_exit
+2023-05-02 14:41:30,806 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: poll_exit
+2023-05-02 14:41:30,807 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: poll_exit
+2023-05-02 14:41:30,808 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: server_info
+2023-05-02 14:41:30,809 DEBUG   SenderThread:12656 [sender.py:send_request():317] send_request: server_info
+2023-05-02 14:41:30,810 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: get_summary
+2023-05-02 14:41:30,811 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: sampled_history
+2023-05-02 14:41:31,032 INFO    MainThread:12656 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-05-02 14:41:31,033 INFO    MainThread:12656 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-05-02 14:41:31,033 INFO    MainThread:12656 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-05-02 14:41:31,034 DEBUG   HandlerThread:12656 [handler.py:handle_request():139] handle_request: shutdown
+2023-05-02 14:41:31,034 INFO    HandlerThread:12656 [handler.py:finish():814] shutting down handler
+2023-05-02 14:41:31,807 INFO    WriterThread:12656 [datastore.py:close():279] close: /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230502_143951-2sqzvcx9/run-2sqzvcx9.wandb
+2023-05-02 14:41:32,036 INFO    SenderThread:12656 [sender.py:finish():1331] shutting down sender
+2023-05-02 14:41:32,036 INFO    SenderThread:12656 [file_pusher.py:finish():168] shutting down file pusher
+2023-05-02 14:41:32,037 INFO    SenderThread:12656 [file_pusher.py:join():173] waiting for file pusher
+2023-05-02 14:41:32,377 INFO    MainThread:12656 [internal.py:handle_exit():77] Internal process exited

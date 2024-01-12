@@ -1,0 +1,13 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+Traceback (most recent call last):
+  File "main_as.py", line 113, in <module>
+    main_siamese(wandb, wandb_logger)
+  File "main_as.py", line 89, in main_siamese
+    if device.type == "cpu":
+AttributeError: 'str' object has no attribute 'type'
+159 53 159 53
+{1: 0.4676470588235294, 2: 2.2714285714285714, 3: 0.99375, 4: 1.272, 5: 1.59}
+Train dataset length: 159
+Validation dataset length: 53

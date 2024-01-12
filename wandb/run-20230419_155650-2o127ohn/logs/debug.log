@@ -1,0 +1,26 @@
+2023-04-19 15:56:50,066 INFO    MainThread:62381 [wandb_setup.py:_flush():68] Configure stats pid to 62381
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_setup.py:_flush():68] Loading settings from /Users/emilywesel/.config/wandb/settings
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_setup.py:_flush():68] Loading settings from /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/settings
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'main.py'}
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_init.py:_log_setup():476] Logging user logs to /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230419_155650-2o127ohn/logs/debug.log
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_init.py:_log_setup():477] Logging internal logs to /Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/wandb/run-20230419_155650-2o127ohn/logs/debug-internal.log
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_init.py:init():516] calling init triggers
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2023-04-19 15:56:50,067 INFO    MainThread:62381 [wandb_init.py:init():569] starting backend
+2023-04-19 15:56:50,068 INFO    MainThread:62381 [wandb_init.py:init():573] setting up manager
+2023-04-19 15:56:50,075 INFO    MainThread:62381 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-04-19 15:56:50,081 INFO    MainThread:62381 [wandb_init.py:init():580] backend started and connected
+2023-04-19 15:56:50,111 INFO    MainThread:62381 [wandb_init.py:init():658] updated telemetry
+2023-04-19 15:56:50,140 INFO    MainThread:62381 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-04-19 15:56:50,482 INFO    MainThread:62381 [wandb_run.py:_on_init():2006] communicating current version
+2023-04-19 15:56:50,613 INFO    MainThread:62381 [wandb_run.py:_on_init():2010] got version response upgrade_message: "wandb version 0.15.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-04-19 15:56:50,613 INFO    MainThread:62381 [wandb_init.py:init():728] starting run threads in backend
+2023-04-19 15:56:54,773 INFO    MainThread:62381 [wandb_run.py:_console_start():1986] atexit reg
+2023-04-19 15:56:54,773 INFO    MainThread:62381 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-04-19 15:56:54,775 INFO    MainThread:62381 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-04-19 15:56:54,775 INFO    MainThread:62381 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-04-19 15:56:54,776 INFO    MainThread:62381 [wandb_init.py:init():765] run started, returning control to user process
+2023-04-19 15:56:59,811 WARNING MsgRouterThr:62381 [router.py:message_loop():77] message_loop has been closed

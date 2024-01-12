@@ -1,0 +1,21 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+Traceback (most recent call last):
+  File "main.py", line 232, in <module>
+    main_triplet(wandb, wandb_logger)
+  File "main.py", line 197, in main_triplet
+    trainer = Trainer(max_epochs=60, logger=wandb_logger, log_every_n_steps=1, callbacks=[lr_monitor], accelerator=device, devices=1)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/utilities/argparse.py", line 340, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 414, in __init__
+    self._accelerator_connector = AcceleratorConnector(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 187, in __init__
+    self._check_config_and_set_final_flags(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 286, in _check_config_and_set_final_flags
+    raise ValueError(
+ValueError: You selected an invalid accelerator name: `accelerator=device(type='cpu')`. Available names are: cpu, cuda, hpu, ipu, mps, tpu.
+Train dataset length: 424
+Validation dataset length: 142
+getting the model
+koday got it

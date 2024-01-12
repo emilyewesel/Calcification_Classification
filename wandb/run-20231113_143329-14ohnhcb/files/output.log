@@ -1,0 +1,28 @@
+159 53 159 53
+{1: 0.4676470588235294, 2: 2.2714285714285714, 3: 0.99375, 4: 1.272, 5: 1.59}
+Train dataset length: 159
+Validation dataset length: 53
+159 53 159 53
+{1: 0.4676470588235294, 2: 2.2714285714285714, 3: 0.99375, 4: 1.272, 5: 1.59}
+Train dataset length: 159
+Validation dataset length: 53
+Sanity Checking: 0it [00:00, ?it/s]
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name | Type            | Params
+-----------------------------------------
+0 | net1 | ResNet          | 14.4 M
+1 | net2 | ResNet          | 14.4 M
+2 | loss | ContrastiveLoss | 0
+-----------------------------------------
+28.7 M    Trainable params
+0         Non-trainable params
+28.7 M    Total params
+114.872   Total estimated model params size (MB)
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py:48: UserWarning: Detected KeyboardInterrupt, attempting graceful shutdown...
+  rank_zero_warn("Detected KeyboardInterrupt, attempting graceful shutdown...")

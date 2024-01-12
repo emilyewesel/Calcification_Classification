@@ -1,0 +1,84 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name | Type             | Params
+------------------------------------------
+0 | net  | ResNet           | 14.4 M
+1 | loss | CrossEntropyLoss | 0
+------------------------------------------
+14.4 M    Trainable params
+0         Non-trainable params
+14.4 M    Total params
+57.436    Total estimated model params size (MB)
+159 53 159 53
+{1: 0.4676470588235294, 2: 2.2714285714285714, 3: 0.99375, 4: 1.272, 5: 1.59}
+Train dataset length: 159
+Validation dataset length: 53
+159 53 159 53
+{1: 0.4676470588235294, 2: 2.2714285714285714, 3: 0.99375, 4: 1.272, 5: 1.59}
+Train dataset length: 159
+Validation dataset length: 53
+Sanity Checking: 0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "main_as.py", line 85, in <module>
+    main_resnet(wandb, wandb_logger)
+  File "main_as.py", line 64, in main_resnet
+    trainer.fit(model, data)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 603, in fit
+    call._call_and_handle_interrupt(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 645, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1098, in _run
+    results = self._run_stage()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1177, in _run_stage
+    self._run_train()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1190, in _run_train
+    self._run_sanity_check()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1262, in _run_sanity_check
+    val_loop.run()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 152, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 121, in advance
+    batch = next(data_fetcher)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/utilities/fetching.py", line 184, in __next__
+    return self.fetching_function()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/utilities/fetching.py", line 265, in fetching_function
+    self._fetch_next_batch(self.dataloader_iter)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/utilities/fetching.py", line 280, in _fetch_next_batch
+    batch = next(iterator)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1333, in _next_data
+    return self._process_data(data)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1359, in _process_data
+    data.reraise()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/_utils.py", line 543, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/nibabel/loadsave.py", line 90, in load
+    stat_result = os.stat(filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/emilywesel/Desktop/Heart/chest_scans/heart_cropped116.nii.gz'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/unimodal_dataset.py", line 140, in __getitem__
+    image = nib.load(image_path)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/nibabel/loadsave.py", line 92, in load
+    raise FileNotFoundError(f"No such file or no access: '{filename}'")
+FileNotFoundError: No such file or no access: '/Users/emilywesel/Desktop/Heart/chest_scans/heart_cropped116.nii.gz'

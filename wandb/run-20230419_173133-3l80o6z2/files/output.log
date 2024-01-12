@@ -1,0 +1,88 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+   | Name                 | Type               | Params
+-------------------------------------------------------------
+0  | resnet               | ResNet             | 14.4 M
+1  | fc1                  | Linear             | 16.4 K
+2  | fc2                  | Linear             | 16.4 K
+3  | fc3                  | Linear             | 16.5 K
+4  | fc4                  | Linear             | 16.4 K
+5  | fc5                  | Linear             | 65
+6  | center_loss          | CenterLoss         | 128
+7  | bce_loss             | BCEWithLogitsLoss  | 0
+8  | triplet_loss         | TripletMarginLoss  | 0
+9  | train_macro_accuracy | MulticlassAccuracy | 0
+10 | val_macro_accuracy   | MulticlassAccuracy | 0
+11 | test_macro_accuracy  | MulticlassAccuracy | 0
+12 | train_accuracy       | MulticlassAccuracy | 0
+13 | val_accuracy         | MulticlassAccuracy | 0
+14 | test_accuracy        | MulticlassAccuracy | 0
+-------------------------------------------------------------
+14.5 M    Trainable params
+0         Non-trainable params
+14.5 M    Total params
+57.950    Total estimated model params size (MB)
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:224: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+Train dataset length: 424
+Validation dataset length: 142
+
+Sanity Checking DataLoader 0:   0%|                                                                                                               | 0/2 [00:00<?, ?it/s]
+/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/multimodal/triplet_model.py:42: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta, Number alpha) (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1420.)
+  distmat.addmm_(1, -2, x, self.centers.t())
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/utilities/data.py:85: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 12. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+
+
+Sanity Checking DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:37<00:00, 18.97s/it]
+Traceback (most recent call last):
+  File "main.py", line 225, in <module>
+    main_triplet(wandb, wandb_logger)
+  File "main.py", line 191, in main_triplet
+    trainer.fit(model=model, train_dataloaders=train_loader, val_dataloaders=val_loader)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 603, in fit
+    call._call_and_handle_interrupt(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 645, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1098, in _run
+    results = self._run_stage()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1177, in _run_stage
+    self._run_train()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1190, in _run_train
+    self._run_sanity_check()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1262, in _run_sanity_check
+    val_loop.run()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 206, in run
+    output = self.on_run_end()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 180, in on_run_end
+    self._evaluation_epoch_end(self._outputs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 288, in _evaluation_epoch_end
+    self.trainer._call_lightning_module_hook(hook_name, output_or_outputs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1342, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/multimodal/triplet_model.py", line 395, in validation_epoch_end
+    self.val_results_df_all.to_csv(filename_out)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/core/generic.py", line 3720, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/io/formats/format.py", line 1189, in to_csv
+    csv_formatter.save()
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/io/formats/csvs.py", line 241, in save
+    with get_handle(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/io/common.py", line 734, in get_handle
+    check_parent_directory(str(handle))
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pandas/io/common.py", line 597, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/home/users/paschali/results'

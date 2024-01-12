@@ -1,0 +1,16 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+Traceback (most recent call last):
+  File "main.py", line 232, in <module>
+    main_triplet(wandb, wandb_logger)
+  File "main.py", line 187, in main_triplet
+    model = MultiModModelWithLanguage(class_weight=data.class_weight, scaler=data.scaler)
+  File "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/multimodal/model_language.py", line 40, in __init__
+    for param in self.language_model.parameters():
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1265, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'MultiModModelWithLanguage' object has no attribute 'language_model'
+Train dataset length: 424
+Validation dataset length: 142
+getting the model

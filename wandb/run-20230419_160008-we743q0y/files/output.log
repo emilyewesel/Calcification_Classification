@@ -1,0 +1,17 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+Traceback (most recent call last):
+  File "main.py", line 225, in <module>
+    main_triplet(wandb, wandb_logger)
+  File "main.py", line 182, in main_triplet
+    model = TripletModel(class_weight=data.class_weight, scaler=data.scaler)
+  File "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/multimodal/triplet_model.py", line 91, in __init__
+    self.center_loss = CenterLoss(num_classes=2, feat_dim=64, use_gpu=True)
+  File "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/multimodal/triplet_model.py", line 29, in __init__
+    self.centers = nn.Parameter(torch.randn(self.num_classes, self.feat_dim).cuda())
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/torch/cuda/__init__.py", line 221, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+Train dataset length: 424
+Validation dataset length: 142

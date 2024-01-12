@@ -1,0 +1,32 @@
+/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/pytorch_lightning/loggers/wandb.py:396: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Global seed set to 23
+Traceback (most recent call last):
+  File "main.py", line 228, in <module>
+    main_triplet(wandb, wandb_logger)
+  File "main.py", line 184, in main_triplet
+    model = MultiModModelWithLanguage(class_weight=data.class_weight, scaler=data.scaler)
+  File "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive/multimodal/model_language.py", line 34, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained('michiyasunaga/BioLinkBERT-base',
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 582, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/transformers/models/auto/tokenization_auto.py", line 433, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/transformers/utils/hub.py", line 409, in cached_file
+    resolved_file = hf_hub_download(
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 124, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1038, in hf_hub_download
+    os.makedirs(storage_folder, exist_ok=True)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/Users/emilywesel/opt/anaconda3/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+OSError: [Errno 30] Read-only file system: '/scratch'
+Train dataset length: 424
+Validation dataset length: 142
+getting the model

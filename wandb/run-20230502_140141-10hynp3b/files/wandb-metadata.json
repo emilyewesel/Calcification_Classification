@@ -1,0 +1,42 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.5",
+    "heartbeatAt": "2023-05-02T21:01:42.258466",
+    "startedAt": "2023-05-02T21:01:41.863885",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/MaggiePas/NCANDA_Contrastive.git",
+        "commit": "f2aeff2cbb0d73ccf36dc34447c9ef408280f44e"
+    },
+    "email": "ewesel@stanford.edu",
+    "root": "/Users/emilywesel/Documents/GitHub/NCANDA_Contrastive",
+    "host": "DN0a24b067.SUNet",
+    "username": "emilywesel",
+    "executable": "/Users/emilywesel/opt/anaconda3/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2000,
+        "min": 2000,
+        "max": 2000
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000,
+            "min": 2000,
+            "max": 2000
+        }
+    ],
+    "disk": {
+        "total": 465.62699127197266,
+        "used": 14.272533416748047
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
